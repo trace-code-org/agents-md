@@ -6,9 +6,10 @@ Requirements must be validated against agents.md before something is implemented
 The requirements must be changed as long as there are contradictions between them and agents.md.
 
 ## Template
-can you please generate some example-requirements for an application?
+Can you please generate some example-requirements for an application?
+The requirements should be kind of specific (not to generic).
 
-### Base Requirement
+### Base Requirements
  - Only web-applications for frontend. No native apps.
  - The system shall be usable on modern desktop and/or mobile browsers.
 
