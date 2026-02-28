@@ -1,5 +1,5 @@
 # Organization Requirements
-**API between frontend and backend:** graphql.  
+**API between frontend and backend:** graphql  
 **Coding Style:** Strongly domain-driven and modular (colocation of what belongs together)
 
 
