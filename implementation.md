@@ -26,6 +26,10 @@ If requirements don't mention how something should be achievable with the specif
 #### Technologies
 Typescript, React, React-Relay, Tailwind
 
+#### TypeScript configuration
+Use a preset-based `tsconfig.json` via `extends` (for example `@tsconfig/*`) and only override project-specific options.
+This keeps projects reproducible while avoiding repeated boilerplate defaults.
+
 #### Screens
 Event if it is not mentioned, applications should normally be divided into multiple screens.
 
