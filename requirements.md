@@ -1,9 +1,12 @@
-# Requirements
-This file is a guideline for creating requirements and is not needed for implementing this project.
+# Requirements Template (for `project.md`)
+This file is a **guideline/template** for creating project requirements.
+It is **not** the source of truth for a concrete app.
 
-### implementation.md
-Requirements must be validated against implementation.md before something is implemented.
-The requirements must be changed as long as there are contradictions between them and implementation.md.
+For real projects, put requirements in the project root as `project.md` (+ versioned `project.vN.md` deltas).
+
+### Relation to `implementation.md`
+Project requirements (`project.md`) must be validated against `agents-md/implementation.md` before implementation.
+If there are contradictions, project requirements must be adjusted to satisfy `implementation.md`.
 
 ## Template
 Can you please generate some example-requirements for an application?
