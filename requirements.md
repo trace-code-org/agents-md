@@ -2,7 +2,10 @@
 This file is a **guideline/template** for creating project requirements.
 It is **not** the source of truth for a concrete app.
 
-For real projects, put requirements in the project root as `project.md` (+ versioned `project.vN.md` deltas).
+For real projects, keep requirements in the project root:
+- `project.vN.md` files contain requirement changes/deltas
+- `project.md` contains the latest consolidated state
+- requirement changes should be added as versioned delta files first, then consolidated into `project.md` by the agent
 
 ### Relation to `implementation.md`
 Project requirements (`project.md`) must be validated against `agents-md/implementation.md` before implementation.
