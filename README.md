@@ -27,12 +27,6 @@ Please implement these requirements with the agents-md flow:
 - Start/stop nap timer per cat
 - Show daily nap leaderboard
 - Add a “zoomies detected” event button
-
-Use agents-md workflow:
-- put new/changed requirements in `project.vN.md` (delta only)
-- consolidate latest state into `project.md`
-- validate against `agents-md/implementation.md`
-- implement from consolidated `project.md`
 ```
 
-That’s it. Keep the request simple, and let the agent apply the requirements/versioning flow.
+That’s it. Keep the request simple, and let agents-md apply its framework (requirements flow + implementation constraints).
