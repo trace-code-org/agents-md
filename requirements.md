@@ -7,7 +7,7 @@ For real projects, keep requirements in the project root:
 - `project.md` contains the latest consolidated state
 - requirement changes should be added as versioned delta files first, then consolidated into `project.md` by the agent
 
-### Relation to `implementation.md`
+### Relation between `project.md` and `agents-md/implementation.md`
 Project requirements (`project.md`) must be validated against `agents-md/implementation.md` before implementation.
 If there are contradictions, project requirements must be adjusted to satisfy `implementation.md`.
 
