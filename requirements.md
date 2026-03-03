@@ -1,18 +1,24 @@
-# Requirements
-This file is a guideline for creating requirements and is not needed for implementing this project.
+# Requirements Template (for `project.md`)
+This file is a **guideline/template** for creating project requirements.
+It is **not** the source of truth for a concrete app.
 
-### implementation.md
-Requirements must be validated against implementation.md before something is implemented.
-The requirements must be changed as long as there are contradictions between them and implementation.md.
+For real projects, keep requirements in the project root:
+- `project.vN.md` files contain requirement changes/deltas
+- `project.md` contains the latest consolidated state
+- requirement changes should be added as versioned delta files first, then consolidated into `project.md` by the agent
 
-## Template
-Can you please generate some example-requirements for an application?
-The requirements should be kind of specific (not to generic).
+### Relation between `project.md` and `agents-md/implementation.md`
+Project requirements (`project.md`) must be validated against `agents-md/implementation.md` before implementation.
+If there are contradictions, project requirements must be adjusted to satisfy `implementation.md`.
 
-### Base Requirements
- - Only web-applications for frontend. No native apps.
- - The system shall be usable on modern desktop and/or mobile browsers.
-
-### Restrictions
- - not more than 10 functional requirements (base requirements excluded)
- - no non-functional requirements
+## Prompt Template
+> Can you please generate some example-requirements for an application?
+> The requirements should be kind of specific (not to generic).
+> 
+> ### Base Requirements
+>  - Only web-applications for frontend. No native apps.
+>  - The system shall be usable on modern desktop and/or mobile browsers.
+> 
+> ### Restrictions
+>  - not more than 10 functional requirements (base requirements excluded)
+> - no non-functional requirements
