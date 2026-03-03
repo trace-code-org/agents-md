@@ -9,7 +9,7 @@ Minimal file set for requirements-driven implementation.
 - `template.md` — integration note (submodule usage)
 
 ## Usage
-1. Keep this repository as `agents-md/` (for example as a git submodule).
+1. Keep this repository at `agents-md/` (using it as git submodule is recommended)
 2. If using submodules, initialize it first:
    - `git submodule update --init agents-md`
 3. Maintain **project-specific requirements** in your project root using this flow:
