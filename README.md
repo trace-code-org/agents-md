@@ -18,3 +18,15 @@ Minimal file set for requirements-driven implementation.
    - Ensure the version title in `project.md` matches the highest revision
 4. Treat `agents-md/implementation.md` as **organization-wide constraints** that `project.md` must satisfy.
 5. In the target project, follow the root `AGENTS.md` / `agents.md` instructions for implementation flow.
+
+## Simple example prompt you can give your agent
+
+```text
+Please implement these requirements with the agents-md flow:
+- Build a web app that tracks naps for office cats 🐈
+- Start/stop nap timer per cat
+- Show daily nap leaderboard
+- Add a “zoomies detected” event button
+```
+
+That’s it. Keep the request simple, and let agents-md apply its framework (requirements flow + implementation constraints).
