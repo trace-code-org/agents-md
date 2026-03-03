@@ -19,24 +19,20 @@ Minimal file set for requirements-driven implementation.
 4. Treat `agents-md/implementation.md` as **organization-wide constraints** that `project.md` must satisfy.
 5. In the target project, follow the root `AGENTS.md` / `agents.md` instructions for implementation flow.
 
-## Example: ordering your agent to implement with agents-md
-
-Use a concrete instruction that forces the requirements flow:
+## Simple example prompt you can give your agent
 
 ```text
-Implement a web app with agents-md.
+Please implement these requirements with the agents-md flow:
+- Build a web app that tracks naps for office cats 🐈
+- Start/stop nap timer per cat
+- Show daily nap leaderboard
+- Add a “zoomies detected” event button
 
-Requirements workflow (mandatory):
-1) Add requirement changes as `project.vN.md` (start at v1 if missing)
-2) Consolidate latest state into `project.md`
-3) Validate `project.md` against `agents-md/implementation.md`
-4) Implement only what matches the consolidated requirements
-5) If requirements change, create next `project.vN.md`, then re-consolidate `project.md`
-
-Delivery:
-- Keep code readable/maintainable
-- Commit with clear messages
-- Open a PR summarizing requirement versions touched and implementation changes
+Use agents-md workflow:
+- put new/changed requirements in `project.vN.md` (delta only)
+- consolidate latest state into `project.md`
+- validate against `agents-md/implementation.md`
+- implement from consolidated `project.md`
 ```
 
-This pattern helps prevent drift between what was requested and what was implemented.
+That’s it. Keep the request simple, and let the agent apply the requirements/versioning flow.
