@@ -1,9 +1,18 @@
 # agents-md
 
-Minimal file set for requirements-driven implementation.
+A lightweight **requirements operating system** for AI-assisted project work.
+
+Instead of repeating long setup prompts in every project, keep `agents-md/` as a stable submodule and evolve requirements in your project as versioned deltas.
+
+> `agents-md` is the shared rulebook; your project owns the requirements history.
+
+## What this is (and isn't)
+- ✅ **Is:** shared process + constraints (`agents-md/`) reused across projects
+- ✅ **Is:** a versioned requirements flow (`requirements/project.vN.md`)
+- ❌ **Is not:** a one-off template to copy once and forget
 
 ## Files
-- `requirements.md` — template/guideline for drafting versioned project requirements in your project (`requirements/project.vN.md`)
+- `requirements.md` — guideline for drafting initial project requirements (`requirements/project.v1.md`)
 - `implementation.md` — organization-wide implementation constraints (shared)
 - `instructions.md` — prompt/workflow shortcuts
 - `template.md` — integration note (submodule usage)
