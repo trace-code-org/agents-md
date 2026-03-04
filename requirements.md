@@ -1,5 +1,5 @@
-# Requirements Template (for `requirements/project.vN.md`)
-This file is a **guideline/template** for creating project requirements.
+# Requirements Template (for `requirements/project.v1.md`)
+This file is a **guideline/template** for creating initial project requirements.
 It is **not** the source of truth for a concrete app.
 
 For real projects, keep requirements as versioned delta files in `requirements/`:
