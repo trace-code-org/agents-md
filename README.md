@@ -29,7 +29,7 @@ Please implement these requirements with the agents-md flow:
 
 That’s it. Keep the request simple, and let agents-md apply its framework (requirements flow + implementation constraints).
 
-## Breaking change
+## v0.3: Breaking change
 Project requirement files now live in `requirements/` instead of the project root.
 - Old: `project.vN.md`
 - New: `requirements/project.vN.md`
