@@ -11,17 +11,6 @@ Instead of repeating long setup prompts in every project, keep `agents-md/` as a
 - ✅ **Is:** a versioned requirements flow (`requirements/project.vN.md`)
 - ❌ **Is not:** a one-off template to copy once and forget
 
-## How it works in practice
-1. Add `agents-md` once as a submodule (prefer a release branch).
-2. Create/update requirement deltas in your project:
-   - `requirements/project.v1.md`
-   - `requirements/project.v2.md`
-   - `requirements/project.v3.md`
-3. Keep each new version as a **delta**, not a full rewrite.
-4. Implement against the accumulated history of deltas, while respecting `agents-md/implementation.md` constraints.
-
-In short: `agents-md` stays stable and reusable; your `requirements/project.vN.md` files are the living project-specific history.
-
 ## Files
 - `requirements.md` — guideline for drafting versioned project requirements (`requirements/project.vN.md`)
 - `implementation.md` — organization-wide implementation constraints (shared)
