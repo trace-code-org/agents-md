@@ -1,5 +1,3 @@
-When adding `agents-md` as a submodule, reference a release branch (for example `release/v0.1`) so breaking changes from `main` are not pulled automatically.
-
 If the agents-md submodule (git) is not initialized yet. This has to be done as a first step:  
 `git submodule update --init agents-md`. 
 
