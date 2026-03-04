@@ -10,6 +10,8 @@ Minimal file set for requirements-driven implementation.
 
 ## Usage
 1. Keep this repository at `agents-md/` (using it as git submodule is recommended)
+   - Recommended: pin the submodule to a release branch (for example `release/v0.1`) so breaking changes from `main` are not pulled automatically.
+   - Example add command: `git submodule add -b release/v0.1 https://github.com/trace-code-org/agents-md.git agents-md`
 2. If using submodules, initialize it first:
    - `git submodule update --init agents-md`
 3. Maintain **project-specific requirements** as versioned delta files in `requirements/`: `requirements/project.v1.md`, `requirements/project.v2.md`, `requirements/project.v3.md`, ...
