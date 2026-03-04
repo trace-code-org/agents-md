@@ -1,6 +1,8 @@
 # agents-md
 
-<img src="docs/assets/agents-md-mascot-sticker.svg" alt="agents-md mascot sticker" align="right" width="120" />
+<img src="https://openmoji.org/data/color/svg/1F99E.svg" alt="lobster mascot" align="right" width="110" />
+
+<sub>Mascot icon: OpenMoji (CC BY-SA 4.0)</sub>
 
 A lightweight **requirements operating system** for AI-assisted project work.
 
