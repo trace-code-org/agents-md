@@ -4,12 +4,14 @@
 
 
 ### Project Requirements
-Project requirements can be found inside the project.md file inside the project root.
-They have to be followed as longs they don't contradict with the organization-requirements.
+Project requirements can be found in versioned files (`project.vN.md`) inside the project root.
+They have to be followed as long as they don't contradict the organization requirements.
 
 #### Versions
-For every new revision of the project-requirements, a project.md with the version-sufix exists, containing the changes in the corresponding revision.
-The project.md file (without version-sufix) contains the resulting requirements from all revisions. If the version in project.md (title) does not match the biggest revision, it has to be updated according to the revision-differences and the new requirements have to be implemented.
+For every new revision of the project requirements, create a new `project.v{N+1}.md` file containing the requirement delta only.
+Do not rewrite or mutate older version files after they are created.
+The effective requirements are distributed across the ordered delta history (`project.v1.md` ... `project.vN.md`), so one cannot derive the full requirement state from only the newest file.
+Implementation must therefore consider all revisions up to the highest version.
 
 ### Docker
 Frontend and backend should have their own docker-containers. They should be managed with docker-compose.
