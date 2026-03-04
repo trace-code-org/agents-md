@@ -1,5 +1,9 @@
 # agents-md
 
+<img src="https://openmoji.org/data/color/svg/1F99E.svg" alt="lobster mascot" align="right" width="110" />
+
+<sub>Mascot icon: OpenMoji (CC BY-SA 4.0)</sub>
+
 A lightweight **requirements operating system** for AI-assisted project work.
 
 Instead of repeating long setup prompts in every project, keep `agents-md/` as a stable submodule and evolve requirements in your project as versioned deltas.
