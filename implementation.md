@@ -8,8 +8,10 @@ Project requirements can be found in versioned files (`project.vN.md`) inside th
 They have to be followed as long as they don't contradict the organization requirements.
 
 #### Versions
-For every new revision of the project requirements, create a new `project.v{N+1}.md` file containing the requirement delta.
-There is no unversioned consolidated `project.md`; use the highest `project.vN.md` as the latest requirement state.
+For every new revision of the project requirements, create a new `project.v{N+1}.md` file containing the requirement delta only.
+Do not rewrite or mutate older version files after they are created.
+The effective requirements are distributed across the ordered delta history (`project.v1.md` ... `project.vN.md`), so one cannot derive the full requirement state from only the newest file.
+Implementation must therefore consider all revisions up to the highest version.
 
 ### Docker
 Frontend and backend should have their own docker-containers. They should be managed with docker-compose.

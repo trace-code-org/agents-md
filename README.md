@@ -12,12 +12,10 @@ Minimal file set for requirements-driven implementation.
 1. Keep this repository at `agents-md/` (using it as git submodule is recommended)
 2. If using submodules, initialize it first:
    - `git submodule update --init agents-md`
-3. Maintain **project-specific requirements** in your project root using this flow:
-   - Keep requirements in versioned files only: `project.v1.md`, `project.v2.md`, `project.v3.md`, ...
-   - Each new revision should represent the requirement delta from the previous revision
-   - The highest `project.vN.md` is the canonical latest requirement state for implementation
-4. Treat `agents-md/implementation.md` as **organization-wide constraints** that `project.vN.md` requirements must satisfy.
-5. In the target project, follow the root `AGENTS.md` / `agents.md` instructions for implementation flow.
+3. Maintain **project-specific requirements** as versioned delta files in your project root: `project.v1.md`, `project.v2.md`, `project.v3.md`, ...
+4. For versioning rules and how deltas are interpreted, see `agents-md/implementation.md` → **Project Requirements / Versions**.
+5. Treat `agents-md/implementation.md` as **organization-wide constraints** that project requirements must satisfy.
+6. In the target project, follow the root `AGENTS.md` / `agents.md` instructions for implementation flow.
 
 ## Simple example prompt you can give your agent
 
