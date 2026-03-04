@@ -1,9 +1,9 @@
-# Requirements Template (for `project.vN.md`)
+# Requirements Template (for `requirements/project.vN.md`)
 This file is a **guideline/template** for creating project requirements.
 It is **not** the source of truth for a concrete app.
 
-For real projects, keep requirements as versioned delta files in the project root:
-- `project.vN.md`
+For real projects, keep requirements as versioned delta files in `requirements/`:
+- `requirements/project.vN.md`
 
 Versioning semantics (delta behavior, ordering, and implementation interpretation) are defined in:
 - `agents-md/implementation.md` → **Project Requirements / Versions**

@@ -4,13 +4,13 @@
 
 
 ### Project Requirements
-Project requirements can be found in versioned files (`project.vN.md`) inside the project root.
+Project requirements can be found in versioned files (`requirements/project.vN.md`) inside the project root.
 They have to be followed as long as they don't contradict the organization requirements.
 
 #### Versions
-For every new revision of the project requirements, create a new `project.v{N+1}.md` file containing the requirement delta only.
+For every new revision of the project requirements, create a new `requirements/project.v{N+1}.md` file containing the requirement delta only.
 Do not rewrite or mutate older version files after they are created.
-The effective requirements are distributed across the ordered delta history (`project.v1.md` ... `project.vN.md`), so one cannot derive the full requirement state from only the newest file.
+The effective requirements are distributed across the ordered delta history (`requirements/project.v1.md` ... `requirements/project.vN.md`), so one cannot derive the full requirement state from only the newest file.
 Implementation must therefore consider all revisions up to the highest version.
 
 ### Docker
