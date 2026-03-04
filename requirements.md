@@ -1,29 +1,27 @@
-# Requirements Template (for `project.md`)
+# Requirements Template (for `project.vN.md`)
 This file is a **guideline/template** for creating project requirements.
 It is **not** the source of truth for a concrete app.
 
 For real projects, keep requirements in the project root:
-- `project.vN.md` files contain requirement changes/deltas
-- `project.md` contains the latest consolidated state
-- requirement changes should be added as versioned delta files first, then consolidated into `project.md` by the agent
+- `project.vN.md` files are the source of truth
+- each new version captures the requirement delta from the previous version
+- the highest `project.vN.md` is the latest requirement state for implementation
 
-### Relation between `project.md` and `agents-md/implementation.md`
-Project requirements (`project.md`) must be validated against `agents-md/implementation.md` before implementation.
+### Relation between `project.vN.md` and `agents-md/implementation.md`
+Project requirements must be validated against `agents-md/implementation.md` before implementation.
 If there are contradictions, project requirements must be adjusted to satisfy `implementation.md`.
 
 ### Versioning (mandatory)
 When requirements change, the implementation flow must follow this sequence:
 
 1. Create a new revision file: `project.v{N+1}.md` (delta from previous version).
-2. Update `project.md` so it contains the consolidated latest requirements, rewritten as the **minimal complete spec** needed to recreate the project.
-3. While consolidating, do not drop active requirements. You may omit resolved/obsolete issue notes (e.g. historical bug details) when they are not required for recreation.
-4. Ensure the version title in `project.md` matches the highest revision (e.g. `Project Requirements v3`).
-5. Implement code changes according to the resulting `project.md`.
+2. Ensure the new revision keeps all active requirements that still apply (do not silently drop scope).
+3. Implement code changes according to the highest `project.vN.md` together with prior revisions.
 
 Do not skip step (1) when requirement scope/behavior changes.
 
 ### Human-in-the-loop (HITL)
-If requirements are added/edited by a human, the agent should perform the consolidation into `project.md` and ensure the version title/state are consistent before implementation.
+If requirements are added/edited by a human, the agent should create/update the next `project.v{N+1}.md` and then implement accordingly.
 
 ## Prompt Template
 > Can you please generate some example-requirements for an application?
