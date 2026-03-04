@@ -15,9 +15,10 @@ If there are contradictions, project requirements must be adjusted to satisfy `i
 When requirements change, the implementation flow must follow this sequence:
 
 1. Create a new revision file: `project.v{N+1}.md` (delta from previous version).
-2. Update `project.md` so it contains the consolidated latest requirements.
-3. Ensure the version title in `project.md` matches the highest revision (e.g. `Project Requirements v3`).
-4. Implement code changes according to the resulting `project.md`.
+2. Update `project.md` so it contains the consolidated latest requirements, rewritten as the **minimal complete spec** needed to recreate the project.
+3. While consolidating, do not drop active requirements. You may omit resolved/obsolete issue notes (e.g. historical bug details) when they are not required for recreation.
+4. Ensure the version title in `project.md` matches the highest revision (e.g. `Project Requirements v3`).
+5. Implement code changes according to the resulting `project.md`.
 
 Do not skip step (1) when requirement scope/behavior changes.
 
