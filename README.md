@@ -1,6 +1,6 @@
 # agents-md
 
-![agents-md banner](docs/assets/agents-md-banner.svg)
+<img src="docs/assets/agents-md-mascot-sticker.svg" alt="agents-md mascot sticker" align="right" width="120" />
 
 A lightweight **requirements operating system** for AI-assisted project work.
 
