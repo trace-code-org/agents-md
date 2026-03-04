@@ -22,7 +22,7 @@ Minimal file set for requirements-driven implementation.
 ## Simple example prompt you can give your agent
 
 ```text
-Please implement these requirements with the agents-md flow:
+Please implement these requirements with the github.com/trace-code-org/agents-md flow:
 - Build a web app that tracks naps for office cats 🐈
 - Start/stop nap timer per cat
 - Show daily nap leaderboard
