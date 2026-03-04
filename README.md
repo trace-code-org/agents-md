@@ -25,9 +25,10 @@ Instead of repeating long setup prompts in every project, keep `agents-md/` as a
 1. Keep this repository at `agents-md/`
    - Recommended: pin it as a git submodule to a release branch
    - Example add command: `git submodule add -b release/v0.3 https://github.com/trace-code-org/agents-md.git agents-md`
-2. Maintain **project-specific requirements** as versioned delta files in `requirements/project.vN.md` (see: `agents-md/implementation.md` → **Project Requirements / Versions**)
-3. Treat `agents-md/implementation.md` as **organization-wide constraints** that project requirements must satisfy.
-4. Let the root `agents.md` in your project reference `agents-md/implementation.md`.
+2. Copy `agents-md/template.md` as `agents.md` into the root of you project.
+3. The newly created `agents.md` file must be followd for the implementation of your project, when following the agents-md flow.
+3. Maintain **project-specific requirements** as versioned delta files in `requirements/project.vN.md`
+(see: `agents-md/implementation.md` → **Project Requirements / Versions**)
 
 ## Simple example prompt you can give your agent
 
