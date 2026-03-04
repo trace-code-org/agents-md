@@ -9,15 +9,12 @@ Minimal file set for requirements-driven implementation.
 - `template.md` — integration note (submodule usage)
 
 ## Usage
-1. Keep this repository at `agents-md/` (using it as git submodule is recommended)
-   - Recommended: pin the submodule to a release branch (for example `release/v0.1`) so breaking changes from `main` are not pulled automatically.
-   - Example add command: `git submodule add -b release/v0.1 https://github.com/trace-code-org/agents-md.git agents-md`
-2. If using submodules, initialize it first:
-   - `git submodule update --init agents-md`
-3. Maintain **project-specific requirements** as versioned delta files in `requirements/`: `requirements/project.v1.md`, `requirements/project.v2.md`, `requirements/project.v3.md`, ...
-4. For versioning rules and how deltas are interpreted, see `agents-md/implementation.md` → **Project Requirements / Versions**.
-5. Treat `agents-md/implementation.md` as **organization-wide constraints** that project requirements must satisfy.
-6. In the target project, follow the root `AGENTS.md` / `agents.md` instructions for implementation flow.
+1. Keep this repository at `agents-md/`
+   - Recommended: pin it as a git submodule to a release branch
+   - Example add command: `git submodule add -b release/v0.3 https://github.com/trace-code-org/agents-md.git agents-md`
+2. Maintain **project-specific requirements** as versioned delta files in `requirements/project.vN.md` (see: `agents-md/implementation.md` → **Project Requirements / Versions**)
+3. Treat `agents-md/implementation.md` as **organization-wide constraints** that project requirements must satisfy.
+4. Let the root `agents.md` in your project reference `agents-md/implementation.md`.
 
 ## Simple example prompt you can give your agent
 
