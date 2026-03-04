@@ -1,5 +1,7 @@
 # agents-md
 
+![agents-md banner](docs/assets/agents-md-banner.svg)
+
 A lightweight **requirements operating system** for AI-assisted project work.
 
 Instead of repeating long setup prompts in every project, keep `agents-md/` as a stable submodule and evolve requirements in your project as versioned deltas.
