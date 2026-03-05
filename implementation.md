@@ -32,6 +32,9 @@ Typescript, React, React-Relay, Tailwind
 Use a preset-based `tsconfig.json` via `extends` (for example `@tsconfig/*`) and only override project-specific options.
 This keeps projects reproducible while avoiding repeated boilerplate defaults.
 
+#### UI consistency and style
+Use a consistent and modern UI design system across the app (typography, spacing, components, and interaction patterns should feel cohesive).
+
 #### Screens
 Event if it is not mentioned, applications should normally be divided into multiple screens.
 
