@@ -14,8 +14,8 @@ The effective requirements are distributed across the ordered delta history (`re
 Implementation must therefore consider all revisions up to the highest version.
 
 #### Requirement coverage by automated tests
-Each project requirement must be covered by at least one automated test.
-If a requirement cannot reasonably be automated, document the reason and define a deterministic validation procedure.
+Every project requirement must be validated by automated tests.
+If one test is not sufficient to validate a requirement, add as many automated tests as needed until the requirement is fully covered.
 
 ### Docker
 Frontend and backend should have their own docker-containers. They should be managed with docker-compose.
