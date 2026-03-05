@@ -13,6 +13,10 @@ Do not rewrite or mutate older version files after they are created.
 The effective requirements are distributed across the ordered delta history (`requirements/project.v1.md` ... `requirements/project.vN.md`), so one cannot derive the full requirement state from only the newest file.
 Implementation must therefore consider all revisions up to the highest version.
 
+#### Requirement coverage by automated tests
+Each project requirement must be covered by at least one automated test.
+If a requirement cannot reasonably be automated, document the reason and define a deterministic validation procedure.
+
 ### Docker
 Frontend and backend should have their own docker-containers. They should be managed with docker-compose.
 A Makefile should contain all the necessary docker-compose commands.
