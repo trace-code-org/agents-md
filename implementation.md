@@ -13,6 +13,11 @@ Do not rewrite or mutate older version files after they are created.
 The effective requirements are distributed across the ordered delta history (`requirements/project.v1.md` ... `requirements/project.vN.md`), so one cannot derive the full requirement state from only the newest file.
 Implementation must therefore consider all revisions up to the highest version.
 
+#### Archive folders are not implementation input
+Folders named like `archive*` (for example `archive`, `archive-v1`, `archive-2026`) are historical snapshots.
+Do not use archive-folder content as implementation input when building the current version, unless the human explicitly requests it.
+Current implementation must be derived from active requirement files and active project sources only.
+
 ### Docker
 Frontend and backend should have their own docker-containers. They should be managed with docker-compose.
 A Makefile should contain all the necessary docker-compose commands.
