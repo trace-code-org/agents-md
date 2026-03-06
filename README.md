@@ -20,9 +20,10 @@ Instead of repeating long setup prompts in every project, keep `agents-md/` as a
 - `implementation.md` — organization-wide implementation constraints (shared)
 - `instructions.md` — prompt/workflow shortcuts
 - `template.md` — integration note (submodule usage)
+- `openclaw.md` — OpenClaw extension for consistent agents-md application
 
 ## Usage
-1. Keep this repository at `agents-md/`
+1. Keep this repository at `agents-md/` of your project
    - Recommended: pin it as a git submodule to a release branch
    - Example add command: `git submodule add -b release/v0.3 https://github.com/trace-code-org/agents-md.git agents-md`
 2. Copy `agents-md/template.md` as `agents.md` into the root of you project.
@@ -41,6 +42,13 @@ Please implement these requirements with the github.com/trace-code-org/agents-md
 ```
 
 That’s it. Keep the request simple, and let agents-md apply its framework (requirements flow + implementation constraints).
+
+## OpenClaw
+I you are using openclaw and want to use agents-md for your projects, just tell your agent this:  
+> Please copy openclaw.md of github.com/trace-code-org/agents-md into your openclaw-workspace and mention in you memory.md to strictly follow it.  
+
+After this instruction you can allways tell you agent to create a project following the agents-md flow.  
+If a project uses agents-md, he will automatically apply the flow.
 
 ## v0.3: Breaking change
 Project requirement files now live in `requirements/` instead of the project root.
