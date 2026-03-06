@@ -1,8 +1,10 @@
 If the agents-md submodule (git) is not initialized yet. This has to be done as a first step:  
 `git submodule update --init agents-md`. 
 
-Project-specific requirement changes should be added as versioned delta files (`requirements/project.vN.md`).
-For delta interpretation, read `agents-md/implementation.md` → **Project Requirements / Versions**.
+All project-specific requirement versioning rules are defined in:
+`agents-md/implementation.md` → **Project Requirements / Versions**.
 
-The organization-wide implementation constraints in this file must be followed strictly:
+Treat those rules as mandatory and strict (including delta-only version files and immutable history).
+
+The organization-wide implementation constraints in that file must be followed strictly:
 [agents-md/implementation.md](agents-md/implementation.md)

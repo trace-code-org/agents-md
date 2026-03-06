@@ -7,11 +7,11 @@
 Project requirements can be found in versioned files (`requirements/project.vN.md`) inside the project root.
 They have to be followed as long as they don't contradict the organization requirements.
 
-#### Versions
-For every new revision of the project requirements, create a new `requirements/project.v{N+1}.md` file containing the requirement delta only.
-Do not rewrite or mutate older version files after they are created.
-The effective requirements are distributed across the ordered delta history (`requirements/project.v1.md` ... `requirements/project.vN.md`), so one cannot derive the full requirement state from only the newest file.
-Implementation must therefore consider all revisions up to the highest version.
+#### Versions (strict)
+For every new revision of the project requirements, you MUST create a new `requirements/project.v{N+1}.md` file containing only the delta for that revision.
+You MUST NOT rewrite, reorder, or mutate older version files after creation.
+The effective requirements are defined by the full ordered delta history (`requirements/project.v1.md` ... `requirements/project.vN.md`), not by the latest file alone.
+Implementation MUST consider and comply with all revisions up to the highest version.
 
 #### Change-control rule (mandatory)
 If implementation behavior/UI/API is changed, a new requirement delta file (`requirements/project.v{N+1}.md`) must be created first (or in the same commit) describing that change.
