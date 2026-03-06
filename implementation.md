@@ -2,7 +2,6 @@
 **API between frontend and backend:** graphql  
 **Coding Style:** Strongly domain-driven and modular (colocation of what belongs together)
 
-
 ### Project Requirements
 Project requirements can be found in versioned files (`requirements/project.vN.md`) inside the project root.
 They have to be followed as long as they don't contradict the organization requirements.
@@ -12,6 +11,7 @@ For every new revision of the project requirements, create a new `requirements/p
 Do not rewrite or mutate older version files after they are created.
 The effective requirements are distributed across the ordered delta history (`requirements/project.v1.md` ... `requirements/project.vN.md`), so one cannot derive the full requirement state from only the newest file.
 Implementation must therefore consider all revisions up to the highest version.
+Any change in this project must be reflected in a new version-delta. Even if it is only a bug-fix.
 
 #### Archive folders are not implementation input
 Folders named like `archive*` (for example `archive`, `archive-v1`, `archive-2026`) are historical snapshots.
