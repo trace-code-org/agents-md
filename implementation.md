@@ -26,6 +26,8 @@ If one test is not sufficient to validate a requirement, add as many automated t
 Frontend and backend should have their own docker-containers. They should be managed with docker-compose.
 A Makefile should contain all the necessary docker-compose commands.
 
+### Deployment configuration boundary (strict)
+Deployment-specific values (for example domains/hosts, ingress routing, public URLs, and environment-specific endpoints) MUST be configured outside application code in deployment configuration.
 
 ### Authentication
 Requirements for "logging in" and "to register" as a user imply that there needs to be some authentication in the system. This normally also implies that there are resources that can only be accessed by the user, when he is authenticated.
