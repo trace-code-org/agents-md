@@ -6,9 +6,9 @@ For real projects, keep requirements as versioned delta files in `requirements/`
 - `requirements/project.vN.md`
 
 Versioning semantics (delta behavior, ordering, and implementation interpretation) are defined in:
-- `agents-md/implementation.md` → **Project Requirements / Versions**
+- `req-trace/implementation.md` → **Project Requirements / Versions**
 
-Project requirements must be validated against `agents-md/implementation.md` before implementation.
+Project requirements must be validated against `req-trace/implementation.md` before implementation.
 If there are contradictions, project requirements must be adjusted to satisfy `implementation.md`.
 
 ## Prompt Template
