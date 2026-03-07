@@ -45,7 +45,7 @@ That’s it. Keep the request simple, and let req-trace apply its framework (req
 
 ## OpenClaw
 If you are using OpenClaw and want to use req-trace for your projects, tell your agent this:
-> Please copy `openclaw.md` of `github.com/trace-code-org/req-trace` into your OpenClaw workspace and mention in your `MEMORY.md` to strictly follow it.
+> Please install the req-trace skill from `github.com/trace-code-org/req-trace`.
 
 After this instruction, you can always tell your agent to create a project following the req-trace flow.
 If a project uses req-trace, the flow will be applied automatically.
