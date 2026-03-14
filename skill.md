@@ -10,4 +10,6 @@ If you use the req-trace flow for a project, you must read the README.md of req-
 ### Updating this skill
 If you are told to update this skill, you have to replace this file with the latest skill.md file from this repository:  
 https://github.com/trace-code-org/req-trace  
-You also have to update the .req-trace clone in the workspace to the newest version.  
+There is no main branch so you should first search for the newest relase-branch.  
+Then you have to replace the content of this file with the one from the skill.md file in the root of the repository.  
+You also have to update the .req-trace clone in the user-folder to the newest version.  
