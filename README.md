@@ -45,9 +45,14 @@ Please implement these requirements with the github.com/trace-code-org/req-trace
 
 ## Skill for agents
 If you are using an agent (like open-claw or codex) and want to use req-trace for your projects, tell your agent this:
-> Please install the req-trace skill (skill.md) from `github.com/trace-code-org/req-trace`.
 
-After this instruction, you can always tell your agent to create a project following the req-trace flow.
+**Generic:**  
+> Please install the req-trace skill from `github.com/trace-code-org/req-trace`. 
+
+**Codex:**  
+> Please install the req-trace skill from `github.com/trace-code-org/req-trace`. Copy only skill.md to: `~/.codex/skills/req-trace/SKILL.md`
+
+After this instruction, you can always tell your agent to create a project following the req-trace skill.
 If a project uses req-trace, the flow will be applied automatically.
 
 ## v0.3: Breaking change
