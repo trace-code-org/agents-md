@@ -50,9 +50,9 @@ If you are using an agent (like open-claw or codex) and want to use req-trace fo
 > Please install the req-trace skill from `github.com/trace-code-org/req-trace`. 
 
 **Codex:**  
-> Please install the req-trace skill from `github.com/trace-code-org/req-trace`. Copy only skill.md to: `~/.codex/skills/req-trace/SKILL.md`
+If you are using codex directly, you should follow this: [setup](codex/codex.md)
 
-After this instruction, you can always tell your agent to create a project following the req-trace skill.
+After this instruction, you can always tell your agent to create a project following the req-trace flow.
 If a project uses req-trace, the flow will be applied automatically.
 
 ## v0.3: Breaking change
