@@ -7,4 +7,7 @@ If you have not already done that, it is recommended to clone this repository in
 
 If you use the req-trace flow for a project, you must read the README.md of req-trace and follow the `Usage` section strictly.
 
-If you are told to update this skill, you also have to update the .req-trace clone in the workspace.
+### Updating this skill
+If you are told to update this skill, you have to replace this file with the latest skill.md file from this repository:  
+https://github.com/trace-code-org/req-trace  
+You also have to update the .req-trace clone in the workspace to the newest version.  
