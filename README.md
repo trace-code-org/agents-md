@@ -55,7 +55,14 @@ If you are using codex directly, you should follow this: [setup](codex/codex.md)
 After this instruction, you can always tell your agent to create a project following the req-trace flow.
 If a project uses req-trace, the flow will be applied automatically.
 
-## v0.3: Breaking change
+## Breaking changes
+## v0.5: extracting guidelines
+You now have to specify inside agents.md (template.md) which implementation-guidelines you wan't to use.
+
+## v0.4: project renamed
+This project was renamed from `agents-md` to `req-trace`.
+
+### v0.3: project-requirements moved
 Project requirement files now live in `requirements/` instead of the project root.
 - Old: `project.vN.md`
 - New: `requirements/project.vN.md`
