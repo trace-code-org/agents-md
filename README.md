@@ -32,7 +32,7 @@ Instead of repeating long setup prompts in every project, keep `req-trace/` as a
 6. Maintain **project-specific requirements** as versioned delta files in `requirements/project.vN.md`
 (see: `req-trace/implementation.md` → **Project Requirements / Versions**)
 
-## Simple example prompt you can give your agent
+## Example prompt for your agent
 
 ```text
 Please implement these requirements with the github.com/trace-code-org/req-trace flow:
@@ -42,11 +42,9 @@ Please implement these requirements with the github.com/trace-code-org/req-trace
 - Add a “zoomies detected” event button
 ```
 
-That’s it. Keep the request simple, and let req-trace apply its framework (requirements flow + implementation constraints).
-
-## OpenClaw
-If you are using OpenClaw and want to use req-trace for your projects, tell your agent this:
-> Please install the req-trace skill from `github.com/trace-code-org/req-trace`.
+## Skill for agents
+If you are using an agent (like open-claw or codex) and want to use req-trace for your projects, tell your agent this:
+> Please install the req-trace skill (skill.md) from `github.com/trace-code-org/req-trace`.
 
 After this instruction, you can always tell your agent to create a project following the req-trace flow.
 If a project uses req-trace, the flow will be applied automatically.
