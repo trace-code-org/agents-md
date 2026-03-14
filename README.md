@@ -23,10 +23,11 @@ Instead of repeating long setup prompts in every project, keep `req-trace/` as a
 - `openclaw.md` — OpenClaw extension for consistent req-trace application
 
 ## Usage
-1. Keep this repository at `req-trace/` of your project
+1. Make sure your project is initialized as a git-repository.
+2. Keep this repository at `req-trace/` of your project
    - Recommended: pin it as a git submodule to a release branch
    - Example add command: `git submodule add -b release/v0.3 https://github.com/trace-code-org/req-trace.git req-trace`
-2. Copy `req-trace/template.md` as `agents.md` into the root of your project.
+3. Copy `req-trace/template.md` as `agents.md` into the root of your project.
 4. Delete the fullstack-section from the copied agents.md if you are not instructed to use the fullstack-guideline.
 5. The newly created `agents.md` file must be followed for implementation when using the req-trace flow.
 6. Maintain **project-specific requirements** as versioned delta files in `requirements/project.vN.md`
