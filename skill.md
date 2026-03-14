@@ -6,3 +6,5 @@ description: Apply the req-trace workflow in programming projects. Use when a us
 If you have not already done that, it is recommended to clone this repository into your workspace under `.req-trace`: github.com/trace-code-org/req-trace.
 
 If you use the req-trace flow for a project, you must read the README.md of req-trace and follow the `Usage` section strictly.
+
+If you are told to update this skill, you also have to update the .req-trace clone in the workspace.
