@@ -5,7 +5,12 @@ The organization-wide implementation constraints in this file must be followed s
 This means they have to be followed for every change that is done to this project:
 [req-trace/implementation.md](req-trace/implementation.md)
 
-**Fullstack Implementation**  
-This project uses the req-trace/fullstack implementation guideline.
+**Frontend Guideline**  
+This project uses the req-trace/frontend implementation guideline.
 These requirements must be followed additionally:
-[req-trace/implementation/fullstack.md](req-trace/implementation/fullstack.md)
+[req-trace/implementation/frontend.md](req-trace/implementation/frontend.md)
+
+**Backend Guideline**  
+This project uses the req-trace/backend implementation guideline.
+These requirements must be followed additionally:
+[req-trace/implementation/backend.md](req-trace/implementation/backend.md)

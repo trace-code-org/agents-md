@@ -1,6 +1,8 @@
 # Organization Requirements
-**API between frontend and backend:** graphql  
 **Coding Style:** Strongly domain-driven and modular (colocation of what belongs together)
+
+### API
+If there is an API between frontend and backend it must use graphql.  
 
 ### Project Requirements (project.vN.md)
 Project requirements can be found in versioned files (`requirements/project.vN.md`) inside the project root.
@@ -26,8 +28,9 @@ Every project requirement must be validated by automated tests.
 If one test is not sufficient to validate a requirement, add as many automated tests as needed until the requirement is fully covered.
 
 ### Docker
-Everything must be wrapped inside (a) docker container(s) so it can be deployed easily.
-A Makefile must contain all the necessary docker-compose commands.
+Everything must be wrapped inside docker container(s) so it can be deployed easily.
+A Makefile must contain all the necessary docker-compose commands.  
+Containers must be managed with docker-compose.
 
 ### Deployment configuration boundary (strict)
 Deployment-specific values (for example domains/hosts, ingress routing, public URLs, and environment-specific endpoints) MUST be configured outside application code in deployment configuration.
