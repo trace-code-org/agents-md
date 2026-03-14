@@ -23,41 +23,11 @@ Every project requirement must be validated by automated tests.
 If one test is not sufficient to validate a requirement, add as many automated tests as needed until the requirement is fully covered.
 
 ### Docker
-Frontend and backend should have their own docker-containers. They should be managed with docker-compose.
-A Makefile should contain all the necessary docker-compose commands.
+Everything must be wrapped inside (a) docker container(s) so it can be deployed easily.
+A Makefile must contain all the necessary docker-compose commands.
 
 ### Deployment configuration boundary (strict)
 Deployment-specific values (for example domains/hosts, ingress routing, public URLs, and environment-specific endpoints) MUST be configured outside application code in deployment configuration.
 
 ### Authentication
 Requirements for "logging in" and "to register" as a user imply that there needs to be some authentication in the system. This normally also implies that there are resources that can only be accessed by the user, when he is authenticated.
-
-
-## Frontend
-If requirements don't mention how something should be achievable with the specified system, it normally means that it should be achievable by the user via frontend.
-
-#### Technologies
-Typescript, React, React-Relay, Tailwind
-
-#### TypeScript configuration
-Use a preset-based `tsconfig.json` via `extends` (for example `@tsconfig/*`) and only override project-specific options.
-This keeps projects reproducible while avoiding repeated boilerplate defaults.
-
-#### UI consistency and style
-Use a consistent and modern UI design system across the app (typography, spacing, components, and interaction patterns should feel cohesive).
-
-#### Screens
-Event if it is not mentioned, applications should normally be divided into multiple screens.
-
-
-## Backend
-Technologies: Go, PostgreSQL (relational database)
-
-#### Database
-Even if it is not mentioned in the requirements. If there needs to be persistend data, one should normally add a postgres-db via docker-compose.
-If a database is used, all the functions of the cmdrunner dbcommand.Standard commands should be implemented.
-The db:data:load command should load some seed-data.
-
-#### Commands
-If some commands have to be executed from the cli. It should be implemented using the cmdrunner package: github.com/timble-one/cmdrunner
-The package is private until now and therefore projects are created from a go-workspace including the cmdrunner-package.

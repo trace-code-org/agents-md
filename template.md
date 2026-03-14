@@ -4,3 +4,8 @@ If the req-trace submodule (git) is not initialized yet. This has to be done as 
 The organization-wide implementation constraints in this file must be followed strictly.
 This means they have to be followed for every change that is done to this project:
 [req-trace/implementation.md](req-trace/implementation.md)
+
+**Fullstack Implementation**  
+This project uses the req-trace/fullstack implementation guideline.
+These requirements must be followed additionally:
+[req-trace/implementation/fullstack.md](req-trace/implementation/fullstack.md)

@@ -27,8 +27,9 @@ Instead of repeating long setup prompts in every project, keep `req-trace/` as a
    - Recommended: pin it as a git submodule to a release branch
    - Example add command: `git submodule add -b release/v0.3 https://github.com/trace-code-org/req-trace.git req-trace`
 2. Copy `req-trace/template.md` as `agents.md` into the root of your project.
-3. The newly created `agents.md` file must be followed for implementation when using the req-trace flow.
-4. Maintain **project-specific requirements** as versioned delta files in `requirements/project.vN.md`
+4. Delete the fullstack-section from the copied agents.md if you are not instructed to use the fullstack-guideline.
+5. The newly created `agents.md` file must be followed for implementation when using the req-trace flow.
+6. Maintain **project-specific requirements** as versioned delta files in `requirements/project.vN.md`
 (see: `req-trace/implementation.md` → **Project Requirements / Versions**)
 
 ## Simple example prompt you can give your agent
